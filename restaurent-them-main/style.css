@@ -211,17 +211,14 @@ footer {
   }
 }
 
-/* Sticky footer (not fixed) */
+/* Footer: visible only at page end */
 footer {
-  position: -webkit-sticky; /* for Safari */
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 50;
+  position: static;
   background: #f1f1f1;
+  margin-top: 2rem;
+  width: 100%;
 }
-/* No extra body padding needed for sticky footer */
+/* No extra body padding needed */
 body {
   padding-bottom: 0;
 }
