@@ -200,5 +200,16 @@ footer {
   }
 }
 
+/* Desktop: force 4 items per row */
+@media (min-width: 992px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  .dish-card img {
+    height: 180px;
+  }
+}
+
 
 
