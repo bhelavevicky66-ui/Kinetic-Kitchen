@@ -211,17 +211,19 @@ footer {
   }
 }
 
-/* Sticky footer: fixed to bottom and avoid content overlap */
+/* Sticky footer (not fixed) */
 footer {
-  position: fixed;
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  bottom: 0;
   left: 0;
   right: 0;
-  bottom: 0;
   z-index: 50;
+  background: #f1f1f1;
 }
-/* Add bottom padding so page content isn't hidden behind footer */
+/* No extra body padding needed for sticky footer */
 body {
-  padding-bottom: 140px;
+  padding-bottom: 0;
 }
 
 
